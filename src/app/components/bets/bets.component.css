@@ -1,0 +1,34 @@
+.money-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.money h1 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.bet-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bet-symbol {
+  font-size: 40px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.bet-button {
+  background-color: lightgray; /* Blue background */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Mouse pointer on hover */
+  padding: 0;
+  margin-right: 5px;
+}
+
+.bet-button:hover {
+  background-color: darkgrey; /* Blue background */
+}

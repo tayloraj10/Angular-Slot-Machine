@@ -1,0 +1,22 @@
+<div class="win-container" *ngIf="slotService.win">
+  <h1 class="win">You Won!</h1>
+</div>
+<mat-grid-list cols="3" rowHeight="2:1" class="slot-board">
+  <mat-grid-tile class="slot-single" *ngFor="let slot of slotService.slotBoard"
+    ><img
+      class="slot-image"
+      src="{{ slotService.imageMap[slot.type] }}"
+      alt="Slot Image"
+  /></mat-grid-tile>
+</mat-grid-list>
+<div class="spin-button-container">
+  <button
+    mat-button
+    (click)="slotService.spinWheel()"
+    class="spin-button"
+    [disabled]="slotService.win"
+    [ngStyle]="{ 'background-color': slotService.win ? 'grey' : '' }"
+  >
+    Spin Wheel!
+  </button>
+</div>

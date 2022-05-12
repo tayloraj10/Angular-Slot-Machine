@@ -1,0 +1,43 @@
+.slot-single {
+  border: 3px solid black;
+  box-sizing: content-box;
+}
+
+.slot-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.spin-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spin-button {
+  margin-top: 25px;
+  color: white;
+  background-color: green;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.win-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.win {
+  font-weight: bold;
+  animation: blinker 2s linear infinite;
+  color: red;
+  font-size: 50px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

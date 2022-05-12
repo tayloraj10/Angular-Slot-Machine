@@ -1,0 +1,28 @@
+<div class="money">
+  <div class="money-item">
+    <h1>You have {{ slotService.credits }} credits</h1>
+    <div class="bet-item">
+      <h1>Your bet is {{ slotService.bet }} credits</h1>
+      <button class="bet-button" mat-button>
+        <fa-icon
+          [icon]="faPlus"
+          class="bet-symbol"
+          [ngStyle]="{ color: 'green' }"
+          (click)="slotService.increaseBet()"
+        >
+          +
+        </fa-icon>
+      </button>
+      <button class="bet-button" mat-button>
+        <fa-icon
+          [icon]="faMinus"
+          class="bet-symbol"
+          [ngStyle]="{ color: 'red' }"
+          (click)="slotService.decreaseBet()"
+        >
+          -
+        </fa-icon>
+      </button>
+    </div>
+  </div>
+</div>
